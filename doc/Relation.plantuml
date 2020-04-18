@@ -1,0 +1,18 @@
+@startuml
+
+class User
+class BankAccount {
+	idUser
+}
+class Budget {
+	idUser
+}
+class Spending {
+	idBudget
+}
+
+Spending::idBudget -> Budget
+Budget::idUser -> User
+BankAccount::idUser -> User
+
+@enduml

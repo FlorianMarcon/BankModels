@@ -1,0 +1,19 @@
+@startuml
+
+enum BankAccountType {
+	CREDIT_AGRICOLE:	'CREDIT_AGRICOLE'
+	BANQUE_POPULAIRE_DU_SUD:	'BANQUE_POPULAIRE_DU_SUD'
+	BANQUE_POSTALE:	'BANQUE_POSTALE'
+}
+
+class BankAccount {
+	_id		:	ID
+
+	type	:	BankAccountType
+
+	accountNumber	:	String
+}
+
+BankAccount::type -> BankAccountType
+
+@enduml

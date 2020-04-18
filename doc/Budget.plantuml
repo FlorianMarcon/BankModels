@@ -1,0 +1,23 @@
+@startuml
+
+
+enum ReccurenceRate {
+	WEEK			:	'WEEK'
+	SEMIMONTH	:	'SEMIMONTH'
+	MONTH		:	'MONTH'
+}
+
+class Budget {
+	_id		:	ID
+
+	name	:	String
+
+	maxSpend	:	Number
+	reccurenceRate	:	ReccurenceRate
+
+	idUser	:	ID
+}
+
+
+Budget::reccurenceRate -> ReccurenceRate
+@enduml

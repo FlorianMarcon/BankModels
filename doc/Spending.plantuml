@@ -1,0 +1,12 @@
+@startuml
+
+class Spending {
+	_id		:	ID
+
+	shop	:	String
+
+	rate		:	Number
+	idBudget	:	Number
+}
+
+@enduml
