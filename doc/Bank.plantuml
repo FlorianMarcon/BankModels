@@ -1,0 +1,24 @@
+@startuml
+
+enum BankTypes {
+	CREDIT_AGRICOLE:	'CREDIT_AGRICOLE'
+	BANQUE_POPULAIRE_DU_SUD:	'BANQUE_POPULAIRE_DU_SUD'
+	BANQUE_POSTALE:	'BANQUE_POSTALE'
+}
+
+
+class Bank {
+	_id		:	ID
+
+	type		:	BankTypes
+
+	agency	:	String
+
+	code		:	String
+
+	address	:	String
+}
+
+Bank::type -> BankTypes
+
+@enduml

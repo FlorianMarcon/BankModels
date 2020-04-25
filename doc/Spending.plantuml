@@ -6,7 +6,10 @@ class Spending {
 	shop	:	String
 
 	rate		:	Number
-	idBudget	:	Number
+
+	idCard		:	ID
+
+	idBudget	:	ID
 }
 
 @enduml
