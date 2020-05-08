@@ -1,0 +1,45 @@
+@startuml
+
+class User
+class Bank
+
+class BankAccount {
+	idUser	:	ID
+	idBank	:	ID
+}
+class Budget {
+	idUser	:	ID
+}
+
+class CreditCard {
+	idBankAccount	:	ID
+
+	idUser	:	ID
+}
+
+class RIB {
+	idUser	:	ID
+
+	idBankAccount	:	ID
+}
+class Spending {
+	idBudget	:	ID
+	idCard		:	ID
+}
+
+BankAccount::idUser -> User
+BankAccount::idBank -> Bank
+
+Budget::idUser -> User
+
+CreditCard::idBankAccount -> BankAccount
+CreditCard::idUser -> User
+
+RIB::idUser -> User
+RIB::idBankAccount -> BankAccount
+
+
+Spending::idBudget -> Budget
+Spending::idCard -> CreditCard
+
+@enduml

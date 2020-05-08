@@ -1,0 +1,27 @@
+@startuml
+
+enum CCTypes {
+	VIRTUAL_STRIPE: VIRTUAL_STRIPE
+	PHYSICAL_STRIPE: PHYSICAL_STRIPE
+	PHYSICAL: PHYSICAL
+}
+
+class CreditCard {
+	_id		:	ID
+
+	numbers	:	String
+
+	ccv		:	String
+
+	expiration	:	Date
+
+	type		:	CCTypes
+
+	idBankAccount	:	ID
+
+	idUser	:	ID
+}
+
+CreditCard::type -> CCTypes
+
+@enduml

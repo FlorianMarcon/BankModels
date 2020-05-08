@@ -1,0 +1,25 @@
+@startuml
+
+enum Roles {
+	tutor: TUTOR
+	tutelle: TUTELLE
+	tutelle: ADMIN
+	lambda:	LAMBDA
+}
+
+class User {
+	_id		:	ID
+
+	firstname	:	String
+	lastname	:	String
+
+	email		:	String
+
+	password	:	String
+
+	role		:	Roles
+}
+
+User::role -> Roles
+
+@enduml

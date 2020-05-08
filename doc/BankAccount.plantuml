@@ -1,0 +1,14 @@
+@startuml
+
+
+class BankAccount {
+	_id			:	ID
+
+	idBank		:	ID
+
+	idUser		:	ID
+
+	accountNumber	:	String
+}
+
+@enduml

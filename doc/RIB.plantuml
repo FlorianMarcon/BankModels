@@ -1,0 +1,18 @@
+@startuml
+
+
+class RIB {
+	_id		:	ID
+	
+	idUser	:	ID
+
+	idBankAccount	:	ID
+
+	keyRIB	:	string
+
+	IBAN	:	string
+
+	BIC		:	string
+}
+
+@enduml
