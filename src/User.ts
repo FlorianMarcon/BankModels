@@ -1,3 +1,4 @@
+import { Address } from "./Address";
 
 export enum Roles {
 	ADMIN = 'ADMIN',
@@ -17,7 +18,13 @@ export interface User {
 
 	password	:		string;
 
+	phone		:		string;
+
+	birthDate	:		Date;
+
 	role		:	Roles;
+
+	address		:	Address;
 }
 
 export interface IUserCreate {
@@ -28,6 +35,12 @@ export interface IUserCreate {
 	email		:		string;
 
 	password	:		string;
+
+	phone		:		string;
+
+	birthDate	:		Date;
+
+	address		:	Address;
 }
 
 export interface IUserUpdate {
@@ -37,9 +50,12 @@ export interface IUserUpdate {
 
 	lastname?	:		string;
 
-	email?		:		string;
+	phone?		:		string;
 
-	password?	:		string;
+	birthDate?	:		Date;
+
+	address?		:	Address;
+
 }
 
 export interface IUserDelete {
