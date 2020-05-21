@@ -20,6 +20,8 @@ export interface User {
 
 	phone		:		string;
 
+	confirmed	:		boolean;
+
 	birthDate	:		Date;
 
 	role		:	Roles;
