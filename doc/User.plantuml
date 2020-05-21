@@ -13,11 +13,17 @@ class User {
 	firstname	:	String
 	lastname	:	String
 
-	email		:	String
-
 	password	:	String
 
 	role		:	Roles
+
+	email		:	String
+
+	birthDate	:	Date
+
+	phone		:	string
+
+	address		:	AddressSchema
 }
 
 User::role -> Roles

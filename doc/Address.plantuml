@@ -1,0 +1,22 @@
+@startuml
+
+class User {
+	address: Address
+}
+class Address {
+	_id		:	ID
+
+	state	:	string
+
+	city	:	string
+
+	postCode:	number
+
+	line1	:	string
+	
+	line2	:	string
+}
+
+User::address -> Address
+
+@enduml
