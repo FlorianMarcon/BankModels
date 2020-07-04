@@ -1,4 +1,4 @@
-import { User } from "./User";
+import { IUser } from "./User";
 import { IBudget } from "./Budget";
 
 export interface ISpending {
@@ -8,7 +8,7 @@ export interface ISpending {
 
 	date	:	Date;
 
-	user	:	User;
+	user	:	IUser;
 	
 	budget	:	IBudget;
 }

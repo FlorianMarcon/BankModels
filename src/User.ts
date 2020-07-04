@@ -1,4 +1,4 @@
-import { Address } from "./Address";
+import { IAddress } from "./Address";
 
 export enum Roles {
 	ADMIN = 'ADMIN',
@@ -7,7 +7,7 @@ export enum Roles {
 	LAMBDA	=	'LAMBDA'
 }
 
-export interface User {
+export interface IUser {
 	_id			:		string;
 
 	firstname	:		string;
@@ -26,7 +26,7 @@ export interface User {
 
 	role		:	Roles;
 
-	address		:	Address;
+	address		:	IAddress;
 }
 
 export interface IUserCreate {
@@ -42,7 +42,7 @@ export interface IUserCreate {
 
 	birthDate	:		Date;
 
-	address		:	Address;
+	address		:	IAddress;
 }
 
 export interface IUserUpdate {
@@ -56,7 +56,7 @@ export interface IUserUpdate {
 
 	birthDate?	:		Date;
 
-	address?		:	Address;
+	address?		:	IAddress;
 
 }
 
