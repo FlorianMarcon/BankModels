@@ -16,5 +16,5 @@ export interface ISpending {
 export interface ISpendingCreate {
 	amount	:	number;
 	
-	idBudget	:	number;
+	idBudget	:	string;
 }
