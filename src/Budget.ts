@@ -4,7 +4,7 @@ export interface IBudget {
 
 	name		:		string;
 
-	amount		:		number;
+	amount		:		number; /* in cts*/
 
 	archivated	:		boolean;
 }
@@ -12,7 +12,7 @@ export interface IBudget {
 export interface IBudgetCreate {
 	name		:		string;
 
-	amount?		:		number;
+	amount?		:		number; /* in cts*/
 }
 
 export interface IBudgetsOptions {
@@ -26,5 +26,5 @@ export interface IBudgetUpdate {
 
 	name?		:		string;
 
-	amount?		:		number;
+	amount?		:		number; /* in cts*/
 }
