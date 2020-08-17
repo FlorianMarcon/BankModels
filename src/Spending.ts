@@ -10,11 +10,11 @@ export interface ISpending {
 
 	user	:	IUser;
 	
-	budget	:	IBudget;
+	budget?	:	IBudget | undefined;
 }
 
 export interface ISpendingCreate {
 	amount	:	number;
 	
-	idBudget	:	string;
+	idBudget?	:	string | undefined;
 }

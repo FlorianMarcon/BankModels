@@ -27,4 +27,6 @@ export interface IBudgetUpdate {
 	name?		:		string;
 
 	amount?		:		number; /* in cts*/
+
+	archivated?	:		boolean;
 }
