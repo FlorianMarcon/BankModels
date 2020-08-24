@@ -1,15 +1,15 @@
 @startuml
 
 class Spending {
-	_id		:	ID
+	_id			:	ID
 
-	shop	:	String
+	' shop	:	String
 
-	rate		:	Number
+	' rate		:	Number
 
-	idCard		:	ID
+	' idCard		:	ID
 
-	idBudget	:	ID
+	idBudget		:	ID
 }
 
 @enduml
