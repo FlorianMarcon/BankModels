@@ -49,6 +49,9 @@ export interface IBankCreate {
     address:    IAddress;
 }
 
+/**
+ * This interface is used to update a Bank
+ */
 export interface IBankUpdate {
     /**
      * Id of the bank
@@ -74,4 +77,18 @@ export interface IBankUpdate {
      * Boolean pour savoir si cette Bank est archivé ou non
      */
     isArchivated?:   boolean;
+}
+
+/**
+ * Cette interface est utilisé afin faire passer des options dans notre requête.
+ */
+export interface IBanksOptions {
+
+    /**
+     * Arguments optionels.
+     * Si le paramètre est definis alors la requête retournera uniquement les Bank étant archivé ou non.
+     * Si non défini. La requête n'appliquera pas de filtre sur ce paramètre.
+     */
+    isArchivated?:  boolean;
+
 }
