@@ -1,7 +1,7 @@
 import { IAddress } from "./Address";
 
 export enum BankType {
-    CREDIT_AGRICOLE
+    CREDIT_AGRICOLE = "CREDIT_AGRICOLE"
 }
 
 export interface IBank {
