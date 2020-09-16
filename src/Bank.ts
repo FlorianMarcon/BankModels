@@ -1,4 +1,4 @@
-import { IAddress } from "./Address";
+import { IAddress, IAddressCreate, IAddressUpdate } from "./Address";
 
 export enum BankType {
     CREDIT_AGRICOLE = "CREDIT_AGRICOLE"
@@ -46,7 +46,7 @@ export interface IBankCreate {
     /**
      * Addresse de la banque
      */
-    address:    IAddress;
+    address:    IAddressCreate;
 }
 
 /**
@@ -71,7 +71,7 @@ export interface IBankUpdate {
     /**
      * Addresse de la banque
      */
-    address?:    IAddress;
+    address?:    IAddressUpdate;
 
     /**
      * Boolean pour savoir si cette Bank est archivé ou non
