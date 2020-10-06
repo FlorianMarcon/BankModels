@@ -3,7 +3,7 @@ import { IAddress } from "./Address";
 export enum Roles {
 	ADMIN = 'ADMIN',
 	TUTOR = 'TUTOR',
-	TUTELLES = 'TUTELLES',
+	PUPIL = 'PUPIL',
 	LAMBDA	=	'LAMBDA'
 }
 
