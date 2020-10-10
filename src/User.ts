@@ -41,6 +41,8 @@ export interface IUserCreate {
 	phone		:		string;
 
 	birthDate	:		Date;
+	
+	role		:	Roles;
 
 	address		:	IAddress;
 }
